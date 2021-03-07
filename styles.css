@@ -1,0 +1,68 @@
+.english-to-morse {
+  border: 1px solid black;
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  text-align: center;
+  overflow-wrap: break-word;
+}
+
+.morse-to-english {
+  border: 1px solid black;
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  text-align: center;
+  overflow-wrap: break-word;
+}
+
+.smallerboxes {
+  padding: 70px;
+}
+
+.topbox {
+  margin-top: 30px;
+}
+
+.heading {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.translator__headings--morse {
+  padding-bottom: 10px;
+}
+
+img {
+  height: 730px;
+  margin-top: 30px;
+}
+
+.translator {
+  overflow-wrap: break-word;
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: 1fr 1fr 1fr 50px;
+  grid-template-areas: "med-1 e-to-m e-to-m-2" "med-1 m-to-e m-to-e-2";
+}
+
+.morse-to-english {
+  grid-area: "m-to-e";
+}
+
+.english-to-morse {
+  grid-area: "e-to-m";
+}
+
+.morse-to-english-2 {
+  grid-area: "m-to-e-2";
+}
+
+.english-to-morse-2 {
+  grid-area: "e-to-m-2";
+}
+
+.translator__media-1 {
+  grid-area: "med-1";
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <title>Morse Code Calculator</title>
+</head>
+
+<body>
+  <h1 class="heading translator__heading">THE MORSE CODE TRANSLATOR</h1>
+  <div class="translator">
+    <div class="translator__media-1">
+      <img class="pictures translator__image" src="media\morse_machine.jpg">
+    </div>
+    <div Class="translator__mechanics">
+      <div class="translator__boxes">
+        <div class="english-to-morse topbox">
+          <h3 class="translator__headings--english">ENGLISH ⇛ -- --- .-. ...</h3>
+          <input type="text" id="english__input" placeholder="Input">
+          <br>
+          <button id="eng-submit">translate</button>
+          <br>
+          <button id="clear-morse">clear</button>
+          <br>
+          <p class="morse-output" id="morse-output">Output</p>
+        </div>
+        <div class="morse-to-english">
+          <h3 class="translator__headings--morse">-- --- .-. ... . ⇛ ENGLISH</h3>
+          <p>c h a r a c t e r s</p>
+          <p> and</p>
+          <p>word / word</p>
+          <p>please.</p>
+          <input type="text" id="morse__input" placeholder="..  -.  .--.  ..-  -">
+          <br>
+          <button id="morse-submit">TRANSLATE</button>
+          <br>
+          <button id="clear-morse">clear</button>
+          <br>
+          <p class="english-output" id="english-output">--- ..- - .--. ..- -</p>
+        </div>
+      </div>
+    </div>
+    <script src="morse-code-translator.js" type=module></script>
+</body>
+
+</html>
